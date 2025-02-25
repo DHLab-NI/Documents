@@ -1,0 +1,32 @@
+{
+  "id": "40206b0e-e7cf-455e-be05-4d496e10845e",
+  "name": "Documents",
+  "publisher": "DHLab",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "All DHLab documents",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50180,
+      "to": 50189
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
