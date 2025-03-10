@@ -234,8 +234,30 @@ report 50180 "DHLab Shipment"
                         {
                             IncludeCaption = true;
                         }
-                    }
+                        column(UNNumberPrint_Text; UNNumberPrintText)
+                        {
 
+                        }
+                        // UN_Number dataitem trigger
+
+                        trigger OnAfterGetRecord()
+                        begin
+
+                            if Item."UN Number Code" <> '' then begin
+                                if UNSubsid1Txt <> '' then begin
+                                    UNSubsid1Txt := ' (' + UNNumber."Subsidiary Risk";
+                                    if UNNumber."Subsidiary Risk 2" <> '' then
+                                        UNSubsid2Txt := ', ' + UNNumber."Subsidiary Risk 2" + ')' else
+                                        UNSubsid2Txt := ')';
+                                end else begin
+                                    UNSubsid1Txt := '';
+                                    UNSubsid2Txt := '';
+                                end;
+                                UNNumberPrintText := Item."UN Number Code" + ' ' + UNNumber."Class/Division" + UNSubsid1Txt + UNSubsid2Txt;
+                            end else
+                                UNNumberPrintText := '';
+                        end;
+                    }
                 }
 
                 // Sales Shipment Line dataitem Trigger
@@ -430,7 +452,6 @@ report 50180 "DHLab Shipment"
                     IncludeCaption = true;
 
                 }
-
             }
 
             // Sales Shipment Header dataitem Trigger
@@ -476,4 +497,7 @@ report 50180 "DHLab Shipment"
         QtyOrdered: Decimal;
         ItemLedgerEntry: Record "Item Ledger Entry";
         SalesLine: Record "Sales Line";
+        UNNumberPrintText: Text;
+        UNSubsid1Txt Text;
+        UNSubsid2Txt Text;
 }
