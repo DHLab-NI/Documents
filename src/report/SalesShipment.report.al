@@ -498,6 +498,6 @@ report 50180 "DHLab Shipment"
         ItemLedgerEntry: Record "Item Ledger Entry";
         SalesLine: Record "Sales Line";
         UNNumberPrintText: Text;
-        UNSubsid1Txt Text;
-        UNSubsid2Txt Text;
+        UNSubsid1Txt: Text;
+        UNSubsid2Txt: Text;
 }
