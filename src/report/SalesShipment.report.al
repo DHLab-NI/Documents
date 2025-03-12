@@ -215,6 +215,18 @@ report 50180 "DHLab Shipment"
                         IncludeCaption = true;
                     }
 
+                    column(No2; "No. 2")
+                    {
+                        IncludeCaption = true;
+                    }
+
+                    column(ShelfNo; "Shelf No.")
+                    {
+                        IncludeCaption = true;
+                    }
+
+
+
                     dataitem(UNNumber; UNNumber)
                     {
                         DataItemLink = Code = field("UN Number Code");
