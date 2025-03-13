@@ -101,7 +101,7 @@ report 50188 "DHLab ADR Label"
                                 UNSubsid1Txt := '';
                                 UNSubsid2Txt := '';
                             end;
-                            UNNumberPrintText := Item."UN Number Code" + ' ' + UNNumber."Class/Division" + UNSubsid1Txt + UNSubsid2Txt;
+                            UNNumberPrintText := Item."UN Number Code" + ' ' + UNNumber."Class/Division" + UNSubsid1Txt + UNSubsid2Txt + ' ' + Format(UNNumber."UN Packing Group");
                         end else
                             UNNumberPrintText := '';
                     end;

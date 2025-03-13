@@ -14,13 +14,15 @@ pageextension 50181 "PostedSalesShipmtHdrPrintExt" extends "Posted Sales Shipmen
                 var
                     SalesShipmentHeader: Record "Sales Shipment Header";
                 begin
-                    Rec.TestField("No."); // Ensure there's a valid document number
+                    SalesShipmentHeader := Rec;
+                    //Rec.TestField("No."); // Ensure there's a valid document number
 
                     // Fetch the current line
-                    SalesShipmentHeader.Get(Rec."No.");
+                    //SalesShipmentHeader.Get(Rec."No.");
 
                     // Run the report with the selected record
-                    Report.Run(50188, true, false, SalesShipmentHeader);
+                    CurrPage.SetSelectionFilter(SalesShipmentHeader);
+                    Report.Run(50189, true, false, SalesShipmentHeader);
                 end;
             }
         }
