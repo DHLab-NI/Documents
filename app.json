@@ -22,6 +22,12 @@
     "name": "Consol PO Req",
     "publisher": "DHLab",
     "version": "1.0.0.0"
+    },
+    {
+      "id": "d397ca97-5ad1-4a76-beaf-7ec7cceeda27",
+      "name": "Warehouse Stock Count",
+      "publisher": "DHLab",
+      "version": "1.0.0.1"
     }
 ],
   "screenshots": [],
