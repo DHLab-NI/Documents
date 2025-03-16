@@ -15,19 +15,19 @@
     "id": "0ff3c0f3-ee4e-43ef-bcef-3c9d5099d180",
     "name": "UN_Number",
     "publisher": "DHLab",
-    "version": "1.0.0.0"     
+    "version": "1.0.0.1"     
     },
     {
     "id": "65359388-1596-40f5-91c1-38c6a4a134bd",
     "name": "Consol PO Req",
     "publisher": "DHLab",
-    "version": "1.0.0.0"
+    "version": "1.0.0.1"
     },
     {
       "id": "d397ca97-5ad1-4a76-beaf-7ec7cceeda27",
       "name": "Warehouse Stock Count",
       "publisher": "DHLab",
-      "version": "1.0.0.1"
+      "version": "1.0.0.2"
     }
 ],
   "screenshots": [],
