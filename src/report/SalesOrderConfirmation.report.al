@@ -244,6 +244,29 @@ report 50184 "DHLab Sales Order Confirmation"
 
             }
 
+            dataitem("SelltoContact"; Contact)
+            {
+                DataItemLink = "No." = field("Sell-to Contact No.");
+
+                column(Sell_to_Contact_Name; Name)
+                {
+                    IncludeCaption = true;
+                }
+                column(Sell_to_Contact_E_Mail; "E-Mail")
+                {
+                    IncludeCaption = true;
+                }
+                column(Sell_to_Contact_Phone_No_; "Phone No.")
+                {
+                    IncludeCaption = true;
+                }
+                column(Sell_to_Contact_Mobile_Phone_No_; "Mobile Phone No.")
+                {
+                    IncludeCaption = true;
+                }
+
+            }
+
             // Sales Header dataitem Trigger
             trigger OnAfterGetRecord()
             begin
