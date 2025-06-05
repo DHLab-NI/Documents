@@ -131,6 +131,10 @@ report 50180 "DHLab Shipment"
             {
             }
 
+            column(Order_Date; format("Order Date", 0, '<day,2>/<month,2>/<year4>'))
+            {
+            }
+
             column(ExternalDocumentNo_Header; "External Document No.")
             {
                 IncludeCaption = true;
