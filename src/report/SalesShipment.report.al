@@ -131,6 +131,13 @@ report 50180 "DHLab Shipment"
             {
             }
 
+            column(SystemCreatedDate_Header; format("SystemCreatedAt", 0, '<day,2>/<month,2>/<year4>'))
+            {
+            }
+            column(SystemCreatedTime_Header; format("SystemCreatedAt", 0, '<Hours24>:<Minutes,2>'))
+            {
+            }
+
             column(Order_Date; format("Order Date", 0, '<day,2>/<month,2>/<year4>'))
             {
             }
